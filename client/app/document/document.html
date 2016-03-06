@@ -1,0 +1,19 @@
+<div class="container">
+
+	<div class="row" ng-repeat="doc in documents">
+		<div class="col-sm-12">
+			{{doc.text}}
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<input type="text" ng-model="docText" class="form-control" placeholder="text" />
+		</div>
+	</div>
+	<br />
+	<div class="row">
+		<div class="col-sm-12">
+			<button ng-click="addDocument()" class="btn btn-primary">Add Document</button>
+		</div>
+	</div>
+</div>
